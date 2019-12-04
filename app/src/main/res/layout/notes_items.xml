@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:id="@+id/item_layout"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/note_id_TXTView"
+        android:layout_width="20dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#ffffff"
+        android:background="#B1AFAF"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="1"
+        android:gravity="center"
+        android:layout_height="55dp" />
+
+    <TextView
+        android:id="@+id/note_content_TXTView"
+        android:textColor="@android:color/black"
+        android:layout_width="200dp"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/note_id_TXTView"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:text="note "
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:layout_height="55dp" />
+
+
+    <TextView
+        android:id="@+id/date_text_view"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="date"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/note_content_TXTView"
+        android:layout_width="120dp"
+        android:layout_height="55dp" />
+
+    <Button
+        android:id="@+id/edit_note_BTN"
+        android:layout_width="match_parent"
+        android:background="@drawable/dots"
+        android:layout_height="55dp"
+        android:layout_toRightOf="@+id/date_text_view"
+        android:textSize="30dp"
+        android:text=""/>
+
+
+    <TextView
+        android:id="@+id/line_textView"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/date_text_view"
+        android:background="#B9B4B4"
+        android:layout_height="2dp"/>
+</RelativeLayout>
